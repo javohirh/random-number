@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3/bootstrap-5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>hello world</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center display-1 text-primary text-align-center mb-5">
+        Random Number Generator
+      </h1>
+      <div class="row mt-4 gap-4 justify-content-center">
+        <input
+          class="col-3"
+          type="number"
+          name="min"
+          id="min"
+          placeholder="Min"
+        />
+        <input
+          class="col-3"
+          type="number"
+          name="max"
+          id="max"
+          placeholder="Max"
+        />
+      </div>
+
+      <button class="btn btn-gen m-auto mt-3 d-block btn-outline-success">
+        Generate
+      </button>
+      <button class="btn btn-reset m-auto mt-3 d-block btn-outline-danger p-1">
+        Reset
+      </button>
+
+      <div class="error row justify-content-center">
+        <h1
+          class="display-2 col-8 mt-5 text-center text-danger result p-3 border border-primary"
+        ></h1>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
